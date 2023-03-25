@@ -86,7 +86,13 @@ nav a {
     padding-left: min(2.5rem, 4vw);
     font-size: .98rem;
     color: var(--neutral-gray-700);
+    cursor: pointer;
+    transition: all 3s all ;
 
+}
+nav a:hover, nav a:active{
+    color: var(--soft-orange);
+    
 }
 
 nav {
@@ -145,6 +151,12 @@ header img {
     outline: none;
     font-size: .8rem;
     font-weight: 800;
+    transition: all .3s all;
+    cursor: pointer;
+}
+.left button:hover {
+    background-color: var(--neutral-gray-900);
+    color: var(--neutral-white);
 }
 
 .right {
@@ -178,6 +190,11 @@ header img {
     margin-bottom: 1rem;
     font-size: 1.3rem;
     color: var(--neutral-white);
+    cursor: pointer;
+    transition: all .3s all;
+}
+.right span:hover {
+    color: var(--soft-orange);
 }
 
 
@@ -214,7 +231,12 @@ header img {
     color: var(--neutral-gray-900);
     font-size: 18px;
     font-weight: 800;
+    cursor: pointer;
+    transition: all .3s all;
 
+}
+.content p:nth-child(2):hover{
+    color: var(--soft-red);
 }
 
 .content p:last-child {

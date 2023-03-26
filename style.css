@@ -15,6 +15,9 @@
 .mx-auto {
     margin: auto;
 }
+.gap{
+    gap: 2em;
+}
 
 .flex {
     display: flex;
@@ -87,12 +90,14 @@ nav a {
     font-size: .98rem;
     color: var(--neutral-gray-700);
     cursor: pointer;
-    transition: all 3s all ;
+    transition: all 3s all;
 
 }
-nav a:hover, nav a:active{
+
+nav a:hover,
+nav a:active {
     color: var(--soft-orange);
-    
+
 }
 
 nav {
@@ -122,11 +127,15 @@ header img {
     gap: 2rem;
 }
 
-
-.left img {
-    width: 100%;
-    height: auto;
+.left .img-container {
+    background: url("assets/images/image-web-3-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    background-position: center;
 }
+
+
 
 .left h3 {
     font-size: 55px;
@@ -154,6 +163,7 @@ header img {
     transition: all .3s all;
     cursor: pointer;
 }
+
 .left button:hover {
     background-color: var(--neutral-gray-900);
     color: var(--neutral-white);
@@ -193,6 +203,7 @@ header img {
     cursor: pointer;
     transition: all .3s all;
 }
+
 .right span:hover {
     color: var(--soft-orange);
 }
@@ -235,7 +246,8 @@ header img {
     transition: all .3s all;
 
 }
-.content p:nth-child(2):hover{
+
+.content p:nth-child(2):hover {
     color: var(--soft-red);
 }
 
@@ -250,11 +262,12 @@ header img {
 }
 
 
-@media (max-width:30em) {
+@media (max-width:630px) {
     .no-scroll {
         overflow-y: hidden;
     }
-    .backdrop{
+
+    .backdrop {
         display: none;
         position: fixed;
         inset: 0 10em 0 0;
@@ -262,24 +275,27 @@ header img {
         /* background-color: transparent; */
         height: 100vh;
         z-index: 100;
-        
+
     }
-    .backdrop.active{
+
+    .backdrop.active {
         display: block;
     }
-    .m-col{
+
+    .m-col {
         flex-direction: column;
-        
+
     }
-    .m-gap{
+
+    .m-gap {
         gap: 1.5em;
     }
 
-    .hero{
+    .hero {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: none;
     }
-    
+
     nav {
         backdrop-filter: opacity(1.5rem);
         background-color: var(--neutral-white);
@@ -289,7 +305,7 @@ header img {
         backface-visibility: var(--soft-red);
     }
 
-    
+
 
     .menu-icon {
         display: block;
@@ -305,12 +321,14 @@ header img {
         right: 5%;
 
     }
+
     nav ul {
         padding: 3em 0;
         flex-direction: column;
     }
+
     nav li {
-        padding: 1rem   
+        padding: 1rem
     }
 
     .menu-icon[data-closed="true"] {
@@ -323,13 +341,13 @@ header img {
         transform: translateX(340%);
         transition: transform .4s all;
     }
-    
+
     nav[aria-expanded="true"] {
         transform: translateX(0%);
         transition: transform .4s all;
     }
 
-    
+
 
 
 }

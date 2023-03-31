@@ -269,12 +269,13 @@ header img {
 
     .backdrop {
         display: none;
-        position: fixed;
+        position: absolute;
         inset: 0 10em 0 0;
         background-color: rgba(0, 0, 0, .6);
         /* background-color: transparent; */
         height: 100vh;
         z-index: 100;
+        width: 100vw;
 
     }
 
@@ -339,12 +340,12 @@ header img {
 
     nav {
         transform: translateX(340%);
-        transition: transform .3s ease-in-out;
+        transition: transform .3s ease-out;
     }
 
     nav[aria-expanded="true"] {
         transform: translateX(0%);
-        transition: transform .3s ease-in;
+        transition: transform .3s ease-out;
     }
 
 

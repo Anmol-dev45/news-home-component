@@ -339,12 +339,12 @@ header img {
 
     nav {
         transform: translateX(340%);
-        transition: transform .4s all;
+        transition: transform .3s ease-in-out;
     }
 
     nav[aria-expanded="true"] {
         transform: translateX(0%);
-        transition: transform .4s all;
+        transition: transform .3s ease-in;
     }
 
 
